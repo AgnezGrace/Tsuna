@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor Bab - Tsuna</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link id="themeStylesheet" rel="stylesheet" href="css/themes/theme-sage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="editor-page-body">
+
+  <header class="navbar navbar-editor">
+    <div class="nav-left">
+      <a id="btnBackToDetail" href="index.html" class="btn-icon" aria-label="Kembali">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      </a>
+      <div class="editor-story-info">
+        <h1 id="editorChapterTitle" class="editor-header-title">Judul Bab</h1>
+        <span id="saveStatus" class="save-status">Tersimpan</span>
+      </div>
+    </div>
+
+    <div class="nav-actions">
+      <button id="btnDeleteChapter" class="btn-icon danger-icon" aria-label="Hapus Bab">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="rich-toolbar">
+    <button class="tool-btn" data-cmd="bold" aria-label="Cetak Tebal"><b>B</b></button>
+    <button class="tool-btn" data-cmd="italic" aria-label="Cetak Miring"><i>I</i></button>
+    <button class="tool-btn" data-cmd="underline" aria-label="Garis Bawah"><u>U</u></button>
+    <button class="tool-btn" data-cmd="strikeThrough" aria-label="Coret"><strike>S</strike></button>
+    <div class="tool-divider"></div>
+    <button class="tool-btn" data-cmd="formatBlock" data-val="H2" aria-label="Judul Besar">H2</button>
+    <button class="tool-btn" data-cmd="formatBlock" data-val="H3" aria-label="Sub Judul">H3</button>
+    <button class="tool-btn" data-cmd="formatBlock" data-val="P" aria-label="Paragraf">P</button>
+    <button class="tool-btn" data-cmd="formatBlock" data-val="BLOCKQUOTE" aria-label="Kutipan">“</button>
+    <div class="tool-divider"></div>
+    <button class="tool-btn" data-cmd="insertUnorderedList" aria-label="Daftar Poin">• List</button>
+    <button class="tool-btn" data-cmd="insertOrderedList" aria-label="Daftar Angka">1. List</button>
+    <div class="tool-divider"></div>
+    <button class="tool-btn" data-cmd="justifyLeft" aria-label="Rata Kiri">
+      <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line></svg>
+    </button>
+    <button class="tool-btn" data-cmd="justifyCenter" aria-label="Rata Tengah">
+      <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="10" x2="6" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="18" y1="18" x2="6" y2="18"></line></svg>
+    </button>
+    <button class="tool-btn" data-cmd="justifyRight" aria-label="Rata Kanan">
+      <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line></svg>
+    </button>
+  </div>
+
+  <main class="editor-container">
+    <div id="editorContent" class="editor-editable" contenteditable="true" spellcheck="false" placeholder="Tulis isi bab ini..."></div>
+  </main>
+
+  <footer class="editor-stats-bar">
+    <div class="stat-item"><span id="wordCount">0</span> Kata</div>
+    <div class="stat-item"><span id="charCount">0</span> Karakter</div>
+  </footer>
+
+  <script src="js/db.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/editor.js"></script>
+</body>
+</html>
