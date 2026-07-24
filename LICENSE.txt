@@ -1,0 +1,12 @@
+Copyright (c) 2026 LUNARICA. All Rights Reserved.
+
+PERMITTED USE:
+1. You are granted permission to download, view, and run this software solely for personal, non-commercial use.
+
+RESTRICTIONS:
+1. NO MODIFICATION: You may NOT modify, adapt, alter, translate, or create derivative works based upon this software or any part thereof.
+2. NO REDISTRIBUTION: You may NOT copy, redistribute, sublicense, publish, or sell this software, either in its original or modified form.
+3. NO COMMERCIAL USE: You may NOT use this software for any commercial purpose without prior written authorization from the copyright owner.
+
+DISCLAIMER:
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THIS SOFTWARE. 
