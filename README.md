@@ -49,33 +49,6 @@ Tsuna includes 6 built-in visual themes tailored for comfortable long-form readi
 
 ---
 
-## 📁 Repository Structure
-
-WRITTER/
-├── css/
-│   ├── style.css             # Main stylesheet & global components
-│   └── themes/               # Theme color palette files
-│       ├── theme-sage.css
-│       ├── theme-lavender.css
-│       ├── theme-monochrome.css
-│       ├── theme-warm.css
-│       ├── theme-berry.css
-│       └── theme-ocean.css
-├── js/
-│   ├── db.js                 # IndexedDB wrapper & storage management
-│   ├── main.js               # Home view controller
-│   ├── story-detail.js       # Story & chapter management logic
-│   ├── editor.js             # Rich text editor controller
-│   ├── cover.js              # Cover editor logic
-│   ├── i18n.js               # Translation / localization handler
-│   └── secret.js             # Additional utility scripts
-├── index.html                # Main entry point
-├── story-detail.html         # Story details page
-├── editor.html               # Writing workspace page
-└── cover-editor.html         # Cover editor page
-
----
-
 ## 🛡️ Data Privacy & Security
 
 Tsuna operates entirely inside your browser. **No data is collected, logged, or sent to any external server.** Make sure to use the **Export JSON** feature periodically in the settings menu to maintain backups of your work.
